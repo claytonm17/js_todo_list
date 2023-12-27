@@ -1,1 +1,1 @@
-# js_todo_list
+A ToDo list created using HTML, CSS, and Javascript
