@@ -1,0 +1,24 @@
+{
+  "name": "10-jstodo",
+  "version": "1.0.0",
+  "description": "A ToDo list created using HTML, CSS, and Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/claytonm17/js_todo_list"
+  },
+  "keywords": [],
+  "author": "claytonm17",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3"
+  }
+}
