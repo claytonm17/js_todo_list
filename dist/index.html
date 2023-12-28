@@ -16,9 +16,15 @@
             <input type="submit" value="Add" class="input-button">
         </form>
         <ul class="list-items">
-            <li class="list-item complete">Do the dishes<span>X</span></li>
-            <li class="list-item">Walk the dog<span>X</span></li>
-            <li class="list-item">Laundry<span>X</span></li>
+            <li class="list-item">
+                <div class="item complete">
+                    <button class="toggle"></button>
+                    <p>Do the dishes</p>
+                </div>
+                <span class="trash">X</span>
+            </li>
+            <li class="list-item"><div class="item"><button class="toggle"></button><p>Walk the dog</p></div><span>X</span></li>
+            <li class="list-item"><div class="item"><button class="toggle"></button><p>Laundry</p></div><span>X</span></li>
         </ul>
     </div>
     <script src="./main.js"></script>

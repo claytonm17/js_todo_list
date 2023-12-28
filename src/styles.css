@@ -24,6 +24,7 @@ body {
 #content {
     background-color: var(--light-background-color);
     min-width: 50vw;
+    min-height: 30rem;
     height: auto;
     border-radius: 1rem;
 }
@@ -87,11 +88,36 @@ body {
 }
 
 .list-item {
+    list-style: none;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1rem;
+    align-items: center;
 }
 
 .complete {
     text-decoration: line-through;
     color: gray;
+}
+
+.trash {
+    color: red;
+}
+
+button.toggle {
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    background-color: var(--light-background-color);
+    border-color: lightgray;
+    border-style: solid;
+}
+
+.complete button {
+    background-color: gray;
+}
+
+.item {
+    display: flex;
 }
