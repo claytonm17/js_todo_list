@@ -53,4 +53,66 @@ const buildTitle = () => {
     titleContainer.appendChild(titleSVG)
 }
 
-buildTitle()
+const buildEntry = () => {
+    const parent = content
+
+    const form = document.createElement('form')
+    form.className = "add-task";
+    parent.appendChild(form)
+
+    const inputText = document.createElement('input')
+    inputText.type = "text"
+    inputText.placeholder = "Enter your task here"
+    inputText.className = "input-text"
+    form.appendChild(inputText)
+
+    const inputSubmit = document.createElement('input')
+    inputSubmit.type = "submit"
+    inputSubmit.value = "Add"
+    inputSubmit.className = "input-button"
+    form.appendChild(inputSubmit)
+}
+
+const buildEmptyList = () => {
+    const parent = content
+
+    const list = document.createElement('ul')
+    list.className = "list-items"
+    parent.appendChild(list)
+}
+
+const addListItem = (title) => {
+    const list = document.querySelector(".list-items")
+
+    const listItem = document.createElement("li")
+    listItem.className = "list-item"
+    list.appendChild(listItem)
+
+    const itemContents = document.createElement("div")
+    itemContents.className = "item"
+    listItem.appendChild(itemContents)
+
+        const toggleButton = document.createElement("button")
+        toggleButton.className = "toggle"
+        itemContents.appendChild(toggleButton)
+
+        const text = document.createElement("p")
+        text.textContent = title
+        itemContents.appendChild(text)
+
+    const remove = document.createElement("span")
+    remove.textContent = "X"
+    listItem.appendChild(remove)
+}
+
+const initalPageLoad = () => {
+    buildTitle()
+    buildEntry()
+    buildEmptyList()    
+}
+
+initalPageLoad()
+
+addListItem("Go to the gym")
+addListItem("Walk the dog")
+addListItem("Laundry")
